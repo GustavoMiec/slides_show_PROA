@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #364b63;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider{
+    background: url(../img/1.png);
+    background-size: cover;
+    height: 450px;
+    width: 800px;
+    box-shadow: 0 5px 8px rgba(0,0,0, .3);
+    animation: animate 20s infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        background-image: url(../img/1.png);
+    }
+    20%{
+        background-image: url(../img/2.png);
+    }
+    40%{
+        background-image: url(../img/3.png);
+    }
+    60%{
+        background-image: url(../img/4.png);
+    }
+    80%{
+        background-image: url(../img/5.png);
+    }
+}
